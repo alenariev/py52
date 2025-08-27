@@ -2,8 +2,13 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 
+# def index(request):
+#     return HttpResponse ("Hello, World")
+
 def index(request):
-    return HttpResponse ("Hello, World")
+    print(request.__dict__)
+    return render(request, 'audith/index.html')
 
-
-# Create your views here.
+def about(request):
+    print(request.__dict__)
+    return render(request, 'about/indexAbout.html')

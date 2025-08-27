@@ -5,5 +5,6 @@ from . import views # импорт из текущей папки файл views
 
 urlpatterns = [
     path('', views.index, name="audith"),
+    path('about/', views.about, name="about"),
 ]
 
